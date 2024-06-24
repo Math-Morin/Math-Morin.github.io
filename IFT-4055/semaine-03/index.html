@@ -37,10 +37,21 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
     <i class="fa fa-remove"></i>
   </a>
   <h4 class="w3-bar-item"><b>Menu</b></h4>
-  <a class="w3-bar-item w3-button w3-hover-black" href="../6mai-12mai/index.html">6 mai - 12 mai</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="../13mai-19mai/index.html">13 mai - 19 mai</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-01/index.html">6 mai - 12 mai</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-02/index.html">13 mai - 19 mai</a>
   <a class="w3-bar-item w3-button w3-hover-black" href="">20 mai - 26 mai</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="../27mai-2juin/index.html">27 mai - 2 juin</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-04/index.html">27 mai - 2 juin</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-05/index.html">3 juin - 9 juin</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-06/index.html">10 juin - 16 juin</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-07/index.html">17 juin - 23 juin</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-08/index.html">24 juin - 30 juin</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-09/index.html">1 juillet - 7 juillet</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-10/index.html">8 juillet - 14 juillet</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-11/index.html">15 juillet - 21 juillet</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-12/index.html">22 juillet - 28 juillet</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-13/index.html">29 juillet - 4 août</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-14/index.html">5 août - 11 août</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-15/index.html">12 août - 18 août</a>
 </nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -56,26 +67,44 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   </div>
 
   <div class="w3-row">
-    <div class="w3-container">
+    <div class="w3-container" style="margin-right: 500px;">
       <h2 class="w3-text-teal">Rencontre du 23 mai</h2>
-      <ul>
-        <li>Résoudre max clique / max stable.</li>
-        <li>Résoudre min vertex cover.</li>
-        <li>Utiliser package graphs.jl pour générer graphes aléatoires: modèles Erdos-Renyi et Barabasi-Albert.</li>
-      </ul>
+      <h4>Compte rendu</h4>
+      <p>
+        Nous avons fait un rappel sur quelques notions d'optimisation linéaire et de théorie des graphes, tels que la dualité, et les
+        formulations de quelques problèmes classiques de graphes que nous voulons résoudre dans nos tests et nos exemples.
+      </p>
+      <p>
+        Cette semaine, nous terminons l'implémentation de la résoluition des problèmes de base. Ceci pourra être
+        utilisé pour résoudre les problèmes de graphes.
+      </p>
+      <p>
+        Pour générer des instances de problèmes de graphes, il existe le package Graphs.jl. Il nous permettra
+        de générer des graphes aléatoires selon les modèles Erdos-Renyi et Barabasi-Albert.
+      </p>
+    </div>
   </div>
 
   <div class="w3-row">
     <div class="w3-container">
       <h2 class="w3-text-teal">Travail fait</h2>
       <ul>
+      </ul>
+      <p>Lectures:</p>
+      <ul>
+        <li><a href="https://inria.hal.science/hal-03830810/document">KidneyExchange.jl: A Julia package for solving the kidney exchange problem with branch-and-price</a></li>
+        <li><a href="https://juliagraphs.org/Graphs.jl/dev/">Documentation Graphs.jl</a></li>
+        <li><a href="https://jump.dev/JuMP.jl/stable/">Documentation JuMP.jl</a></li>
+      </ul>
+      <p>Code:</p>
+      <ul>
         <li>Étude du package KidneyExchange.jl pour mieux comprendre comment structurer le nôtre.</li>
+        <li>Ajout du package Graphs.jl pour générer graphes aléatoires: modèles Erdos-Renyi et Barabasi-Albert.</li>
         <li>Implémentation pour résoudre un premier exemple simple 0-1 IP.</li>
-        <li>Implémentation <i>max indep. set</i> et <i>min vertex cover</i></li>
+        <li>Implémentation <i>max independent set</i> et <i>minimum vertex covering set</i>.</li>
       </ul>
     </div>
   </div>
-
 
 <!-- END MAIN -->
 </div>

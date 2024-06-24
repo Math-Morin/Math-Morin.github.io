@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Math-Morin.github.io - IFT-4055 - Semaine du 24 juin au 30 juin</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="../../index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Home</a>
+    <a href="../index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">IFT-4055</a>
+    <a href="" class="w3-bar-item w3-button w3-hide-small w3-hover-white">24 juin au 30 juin</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-01/index.html">6 mai - 12 mai</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-02/index.html">13 mai - 19 mai</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-03/index.html">20 mai - 26 mai</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-04/index.html">27 mai - 2 juin</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-05/index.html">3 juin - 9 juin</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-06/index.html">10 juin - 16 juin</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-07/index.html">17 juin - 23 juin</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="">24 juin - 30 juin</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-09/index.html">1 juillet - 7 juillet</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-10/index.html">8 juillet - 14 juillet</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-11/index.html">15 juillet - 21 juillet</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-12/index.html">22 juillet - 28 juillet</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-13/index.html">29 juillet - 4 août</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-14/index.html">5 août - 11 août</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-15/index.html">12 août - 18 août</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-container">
+      <h1 class="w3-text-teal">Semaine du 24 juin au 30 juin</h1>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-container" style="margin-right: 500px;">
+      <h2 class="w3-text-teal">Rencontre du 20 juin</h2>
+      <h4>Compte rendu</h4>
+      <p>
+        Pas de rencontre: vacances.
+      </p>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-container">
+      <h2 class="w3-text-teal">Travail fait</h2>
+      <ul>
+        <li>Implémentation de la génération de colonnes.</li>
+      </ul>
+      <p>Lectures:</p>
+      <ul>
+        <li><a href="https://papyrus.bib.umontreal.ca/xmlui/bitstream/handle/1866/26543/St_Arnaud_William_2021_memoire.pdf?sequence=2&isAllowed=y">Towards Fairness in Kidney Exchange Programs</a></li>
+      </ul>
+    </div>
+  </div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
+
+

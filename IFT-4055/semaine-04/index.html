@@ -27,7 +27,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
     <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
     <a href="../../index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Home</a>
     <a href="../index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">IFT-4055</a>
-    <a href="" class="w3-bar-item w3-button w3-hide-small w3-hover-white">20 mai - 26 mai</a>
+    <a href="" class="w3-bar-item w3-button w3-hide-small w3-hover-white">27 mai - 2 juin</a>
   </div>
 </div>
 
@@ -37,10 +37,21 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
     <i class="fa fa-remove"></i>
   </a>
   <h4 class="w3-bar-item"><b>Menu</b></h4>
-  <a class="w3-bar-item w3-button w3-hover-black" href="../6mai-12mai/index.html">6 mai - 12 mai</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="../13mai-19mai/index.html">13 mai - 19 mai</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="../20mai-26mai/index.html">20 mai - 26 mai</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-01/index.html">6 mai - 12 mai</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-02/index.html">13 mai - 19 mai</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-03/index.html">20 mai - 26 mai</a>
   <a class="w3-bar-item w3-button w3-hover-black" href="">27 mai - 2 juin</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-05/index.html">3 juin - 9 juin</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-06/index.html">10 juin - 16 juin</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-07/index.html">17 juin - 23 juin</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-08/index.html">24 juin - 30 juin</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-09/index.html">1 juillet - 7 juillet</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-10/index.html">8 juillet - 14 juillet</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-11/index.html">15 juillet - 21 juillet</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-12/index.html">22 juillet - 28 juillet</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-13/index.html">29 juillet - 4 août</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-14/index.html">5 août - 11 août</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="../semaine-15/index.html">12 août - 18 août</a>
 </nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -56,23 +67,37 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   </div>
 
   <div class="w3-row">
-    <div class="w3-container">
+    <div class="w3-container" style="margin-right: 500px;">
       <h2 class="w3-text-teal">Rencontre du 30 mai</h2>
-      <ul>
-        <li>Rédiger un texte explicatif du modèle mathématique qui sera utilisé pour implémenter la lotterie.</li>
-        <li>Commencer rédaction du rapport mi-session.</li>
-      </ul>
+      <h4>Compte rendu</h4>
+      <p>
+        Maintenant que nous avons un peu de code d'écrit, nous allons nous pencher sur le problème cental de l'équité. Nous commencerons par
+        rédiger un <a href="">document</a>(TODO: ajouter lien) explicatif du modèle mathématique qui sera utilisé pour implémenter la loterie.
+        Ceci cera utile pour le rapport final, mais aussi pour s'assurer de la bonne compréhension.
+      </p>
+      <p>
+        Le modèle devra à terme être général: avec des paramètres en entrés, il faudra pouvoir résoudre n'importe quel programme linéaire
+        selon n'importe quel schème d'équité.
+      </p>
+      <p>
+        Nous avons vu la technique de génération de colonne qui sera utilisée par notre solveur. Un rappel de certaines notions d'optimisation a aussi été donné.
+      </p>
+    </div>
   </div>
 
   <div class="w3-row">
     <div class="w3-container">
       <h2 class="w3-text-teal">Travail fait</h2>
       <ul>
-        <li>Rédaction rapport et texte explicatif.</li>
+        <li>Rédaction du document explicatif du modèle mathématique.</li>
+        <li>Étude de la génération de colonnes.</li>
+      </ul>
+      <p>Lectures:</p>
+      <ul>
+        <li><a href="https://jump.dev/JuMP.jl/stable/tutorials/algorithms/cutting_stock_column_generation/">Documentation sur la génération de colonnes de JuMP.jl.</a></li>
       </ul>
     </div>
   </div>
-
 
 <!-- END MAIN -->
 </div>
